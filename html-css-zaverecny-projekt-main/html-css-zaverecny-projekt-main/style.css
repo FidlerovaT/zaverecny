@@ -1,0 +1,280 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+:root {
+  --color-primary: #ec5600;
+  --color-primary-dark: #db5000;
+  --color-secondary: #4d592b;
+  --color-secondary-dark: #414536;
+  --color-secondary-light: #adb29e;
+  --color-secondary-bright: #e2e4d9;
+  --color-section-bg: #f5f5f1;
+  --color-text: #172126;
+  --color-footer-bg: #2c2f24;
+
+  --radius: 12px;
+  --font-family-velke-nadpisy: "Playfair Display", serif;
+  --font-family-obsah: "DM Sans", sans-serif;
+
+}
+
+body {
+  font-family: var(--font-family-obsah);
+  font-size: 1.125 rem;
+  line-height: 1.4;
+  color: var(--color-text);
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: var(--font-family-velke-nadpisy);
+}
+
+
+h1 {
+  font-size: 3.5 rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h3 {
+  font-family: var(--font-family-obsah);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.sekce__listek,
+.sekce__banner,
+.sekce__rozvoz,
+.footer__paticka {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container {
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+}
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.hlavicka {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  height: 35px;
+  margin:0 auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav__link {
+  display: inline-block;
+  padding: 10px 15px 10px 15px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-decoration: none;
+  color:var(--color-secondary-dark);
+  border-radius: 100vw;
+  justify-items: center;
+  text-align: center;
+  white-space: nowrap;
+  flex: 1;
+}
+
+.nav__link:hover {
+  background-color: var(--color-secondary-bright);
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  background-color: var(--color-primary);
+  border-radius: 100vw;
+}
+
+.button:hover {
+  background-color: var(--color-primary-dark);
+  text-decoration: none;
+}
+
+.sekce__banner {
+  background-image: url(images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero__popis {
+  margin-top:30px;
+  margin-bottom: 30px;
+  font-size: 1.125rem;
+}
+
+.hero__title {
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+.snidane,
+.hlavni_jidla,
+.grill,
+.napoje {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid var(--color-secondary-bright);
+  border-radius: var(--radius);
+  text-decoration: none;
+  line-height: 20px;
+  padding: 30px 20px;
+}
+  
+.karty {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  text-align: center;
+}
+
+ a {
+  text-decoration: none;
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.nadpis {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.ikona {
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+}
+
+.nadpis2 {
+  color: var(--color-secondary);
+}
+
+.sekce__rozvoz {
+background-color: var(--color-section-bg);
+}
+
+.rozvoz__box {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px; 
+  padding-bottom: 20px; 
+}
+
+.rozvoz {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.nadpis_rozvoz {
+  flex-direction: row;
+}
+
+.avatar{
+  width: 40px;
+  height: 40px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.list_popis {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-size: 1.125;
+  font-weight: 500;
+  color: var(--color-secondary-dark);
+  margin-bottom: 10px;
+}
+
+.rozvoz__text {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.footer__paticka {
+  background-color: var(--color-footer-bg);
+  color: var(--color-secondary-light);
+  padding-top: 30px;
+}
+
+.odkaz {
+  color: var(--color-secondary-bright);
+  text-decoration: underline;
+}
+
+.logo_paticka {
+  height: 40px;
+}
+
+.adresa {
+  margin-top: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 20px 0 20px 0;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+}
+
